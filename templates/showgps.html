@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPS Data</title>
+</head>
+<body>
+<table>
+	<tr>
+	<th>ID</th>
+	<th>Latitude</th>
+	<th>Longitude</th>	
+	<th>Gas 1</th>	
+	<th>Gas 2</th>	
+	</tr>
+	{%for x in context%}
+	<tr>
+		
+		<td>{{x.CarID}}</td>
+		<td>{{x.Latitude}}</td>
+		<td>{{x.Longitude}}</td>
+		<td>{{x.gas1}}</td>
+		<td>{{x.gas2}}</td>
+		
+	</tr>
+	{%endfor%}
+</table>
+</body>
+</html>
